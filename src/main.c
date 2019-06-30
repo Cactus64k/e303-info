@@ -45,13 +45,12 @@ int main(int argc, char *argv[])
 
 					if(content != NULL)
 					{
-						if(replace_list != NULL)
-						{
-							REPLACE_LIST* item = replace_list_search(replace_list, (char*)content);
+						REPLACE_LIST* item = replace_list_search(replace_list, (char*)content);
+						if(item != NULL)
 							printf("%s\n", item->replace);
-						}
 						else
 							printf("%s\n", content);
+
 					}
 
 					xmlFree(content);
