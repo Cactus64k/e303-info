@@ -1,13 +1,28 @@
-The Debian Package modem-info
+The Debian Package e303-info
 ----------------------------
 
-Tool for get info from Huawei e303 modem. It works with libxml2 and libcurl. Can be used on other Huawei modems, wich provide web interface with xml files.
+################################# modem-info #################################
+Tool to get information from Huawei e303 modem.
+Work with libxml2 and libcurl(build depends).
+Utility can replase xml value with replace file
+Example: modem-info http://192.168.1.1/api/monitoring/status SignalStrength
+This command get you signal strength in percents.
 
-INSTALL:
-dpkg-buildpackage
-dpkg -i modem-info_1.0.0_amd64.deb
+modem-info [url_address] [param] [replace file optional]
 
-USE:
-modem-info http://192.168.1.1/api/monitoring/status SignalStrength
+Replace file format:
+original:replace\n
+original1:replace1\n
+
+links:
+http://192.168.1.1/api/monitoring/status
+http://192.168.1.1/api/net/current-plmn
+http://192.168.1.1/api/sms/sms-count
+http://192.168.1.1/api/device/information
+http://192.168.1.1/api/monitoring/traffic-statistics
+http://192.168.1.1/api/dialup/connection
+http://192.168.1.1/api/dialup/profiles
+http://192.168.1.1/api/global/module-switch
+
 
  -- unknown <medved_cool@mail.ru>  Sun, 30 Jun 2019 00:05:52 +0300

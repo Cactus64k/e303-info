@@ -1,11 +1,11 @@
-################################# modem-info #################################
+################################# e303-info #################################
 Tool to get information from Huawei e303 modem.
 Work with libxml2 and libcurl(build depends).
 Utility can replase xml value with replace file
 Example: modem-info http://192.168.1.1/api/monitoring/status SignalStrength
 This command get you signal strength in percents.
 
-modem-info [url_address] [param] [replace file optional]
+e303-info [url_address] [param] [replace file optional]
 
 Replace file format:
 original:replace\n

@@ -6,7 +6,7 @@ int main(int argc, char *argv[])
 
 	if((argc != 3) && (argc != 4))
 	{
-		fprintf(stderr, "modem-info [url_address] [param] [replace file optional]\n\n");
+		fprintf(stderr, "e303-info [url_address] [param] [replace file optional]\n\n");
 		fprintf(stderr, "Replace file format:\n");
 		fprintf(stderr, "original:replace\\n\n");
 		fprintf(stderr, "original1:replace1\\n\n");
