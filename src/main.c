@@ -10,6 +10,7 @@ int main(int argc, char *argv[])
 		fprintf(stderr, "Replace file format:\n");
 		fprintf(stderr, "original:replace\\n\n");
 		fprintf(stderr, "original1:replace1\\n\n");
+
 		status = EXIT_FAILURE;
 	}
 	else
