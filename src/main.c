@@ -29,6 +29,7 @@ int main(int argc, char *argv[])
 		{
 			curl_easy_setopt(curl, CURLOPT_URL, url);
 			curl_easy_setopt(curl, CURLOPT_NOPROGRESS, 1);
+			curl_easy_setopt(curl, CURLOPT_CONNECTTIMEOUT, 1);
 			curl_easy_setopt(curl, CURLOPT_WRITEDATA, ctxt);
 			curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_callback);
 
